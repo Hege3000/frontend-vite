@@ -1,0 +1,152 @@
+/*////////////////////
+        // Positioning items    
+        //////////////////////
+        
+        Reset *
+        Display: inline vs block
+        https://www.w3schools.com/cssref/pr_class_display.asp
+    
+        Box-sizing
+        https://www.w3schools.com/css/css3_box-sizing.asp
+        
+        Using percentages and max-width
+        https://www.w3schools.com/cssref/css_units.asp
+        Centering
+        https://www.w3schools.com/css/css_align.asp
+    
+        Float and clear
+        https://www.w3schools.com/cssref/pr_class_float.asp
+                
+        Absolute/Relative positioning
+        https://www.w3schools.com/cssref/pr_class_position.asp
+        
+        
+        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+        */
+
+      /* --- PERUSASETUKSET --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Valitse oma teemavärisi tähän */
+}
+
+/* --- KESKITYS (Tehtävän vaatimus) --- */
+.sivun-raamit{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto; 
+	text-align: center; /* Keskittää osiot */
+}
+
+/* --- NAVIGAATIO (Ei Flexboxia) --- */
+nav {
+    background-color: #333;
+    overflow: hidden; /* Pitää floatatut li-elementit sisällä */
+    border-bottom: 4px solid #4CAF50; /* Teemaväri alareunaan */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+.hero-banner {
+    clear: both;
+    width: 100%;
+    height: 400px; /* Voit säätää korkeutta */
+    /* background-image: url('/img/bmi.jpeg'); */ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    /* background-color: red; // testaus */
+}
+
+.index-hero {
+    background-image: url('/img/banner_index.jpg'); /* kuva pienennetty ~48Mb */
+}
+
+.bmi-hero {
+    background-image: url('/img/bmi.jpeg');
+}
+
+
+/* Sivuston nimi (li, ei linkkiä välttämättä) */
+nav li.brand {
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+/* Pseudoluokat ylänavigaatioon (Tehtävän vaatimus) */
+nav li a:hover {
+    background-color: #555;
+    color: #4CAF50; /* Väri muuttuu kohdistettaessa */
+}
+
+nav li a:active {
+    background-color: #4CAF50;
+    color: white; /* Väri kun linkkiä painetaan */
+}
+
+/* --- YHTEYSTIEDOT & FLOAT --- */
+.yhteystiedot {
+    text-align: left; /* kumotaan keskitys laatikon sisällä */
+	margin-top: 40px;
+    background-color: honeydew;
+    padding: 20px;
+    border-radius: 15px; /* Pyöristetyt reunat (Tehtävän vaatimus) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Varjostus (Tehtävän vaatimus) */
+}
+
+.yhteys-kuva {
+    float: left; /* Float-asemointi (Tehtävän vaatimus) */
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.korostus {
+    background-color: lightblue;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+/* Clearfix-apu, jotta float ei valu laatikon yli */
+.clear {
+    clear: both;
+}
+#LightBlue {
+	background-color: lightblue;
+	padding: 2px 5px;
+}
+
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: coral;
+    margin-top: 40px;
+}
