@@ -176,18 +176,18 @@ footer {
 }
 @media screen and (max-width: 1150px) {
     .yhteystiedot {
-        /* 1. Poistetaan taustakuva, joka häiritsee lukemista */
+        /* Poistetaan taustakuva */
         background-image: none;
         
-        /* 2. Lisätään tilalle neutraali taustaväri (esim. vaaleanharmaa) */
+        /* tilalle kuvasta poimittu taustaväri  */
         background-color: rgba(167,175,197,1);
         
-        /* 3. Nyt voimme vapauttaa tekstin käyttämään lähes koko leveyttä */
+        /* tekstin muokkaus */
         padding-right: 40%;
         padding-left: 5%;
         padding-bottom: 5%;
         
-        /* 4. Varmistetaan, että laatikko joustaa yhä tekstin mukaan */
+        /* Varmistetaan, että laatikko joustaa yhä tekstin mukaan */
         height: auto;
     }
 }
