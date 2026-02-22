@@ -39,7 +39,7 @@ body {
 /* --- KESKITYS (Tehtävän vaatimus) --- */
 .sivun-raamit{
     width: 90%;
-    max-width: 960px;
+    max-width: 1200px; /* sivun maksimi leveys */
     margin: 0 auto; 
 	text-align: center; /* Keskittää osiot */
 }
@@ -64,7 +64,7 @@ nav li {
 .hero-banner {
     clear: both;
     width: 100%;
-    height: 400px; /* Voit säätää korkeutta */
+    height: 40vh; /* kuva aina 40% selaimen korkeudesta */
     /* background-image: url('/img/bmi.jpeg'); */ 
     background-size: cover;
     background-position: center;
@@ -112,12 +112,21 @@ nav li a:active {
 .yhteystiedot {
     text-align: left; /* kumotaan keskitys laatikon sisällä */
 	margin-top: 40px;
-    background-color: honeydew;
-    padding: 20px;
+    /* background-color: honeydew;  vanha taustaväri */
+    background-image: url('../public/img/Yhteystiedot.jpg');
+    background-size: cover; /* täyttää koko laatikon, skaalaus */
+    background-position: right; 
+    background-repeat: no-repeat; /* estää kuvan toistumisen */
+    min-height: 450px;
+    padding-top: 10px;
+    padding-right: 20%;
+    padding-left: 40px;
     border-radius: 15px; /* Pyöristetyt reunat (Tehtävän vaatimus) */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Varjostus (Tehtävän vaatimus) */
 }
-
+.yhteystiedot p {
+    margin-bottom: 20px; /* <p></p> kappaleiden välin määrittely */
+}
 .yhteys-kuva {
     float: left; /* Float-asemointi (Tehtävän vaatimus) */
     width: 200px;
@@ -149,4 +158,61 @@ footer {
     background-color: #333;
     color: coral;
     margin-top: 40px;
+}
+
+/* break poitit */
+
+@media screen and (max-width: 1300px) {
+    .yhteystiedot{
+        padding-right: 40%;
+        background-position: right bottom;
+        /* height: auto; */
+    }    
+    .yhteys-kuva {
+        float: none;
+
+    }
+
+}
+@media screen and (max-width: 1150px) {
+    .yhteystiedot {
+        /* 1. Poistetaan taustakuva, joka häiritsee lukemista */
+        background-image: none;
+        
+        /* 2. Lisätään tilalle neutraali taustaväri (esim. vaaleanharmaa) */
+        background-color: rgba(167,175,197,1);
+        
+        /* 3. Nyt voimme vapauttaa tekstin käyttämään lähes koko leveyttä */
+        padding-right: 40%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        
+        /* 4. Varmistetaan, että laatikko joustaa yhä tekstin mukaan */
+        height: auto;
+    }
+}
+/* Navigaation muutos kapeille näytöille */
+@media screen and (max-width: 640px) {
+    nav ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column; /* Muuttaa vaakarivin pystysuuntaiseksi pinoksi */
+        align-items: center;    /* Keskittää linkit */
+    }
+
+    nav li {
+        float: none;            /* Varmistetaan, ettei float ole päällä */
+        width: 100%;            /* Linkki vie koko leveyden */
+        text-align: center;
+        border-bottom: 1px solid #ddd; /* Lisätään pieni erotinviiva linkkien välille */
+    }
+
+    nav li:last-child {
+        border-bottom: none;    /* Poistetaan viiva viimeisestä linkistä */
+    }
+
+    nav a {
+        display: block;
+        padding: 15px 0;        /* Tehdään linkeistä helpommin klikattavia sormella */
+    }
 }
