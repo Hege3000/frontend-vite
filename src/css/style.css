@@ -113,7 +113,7 @@ nav li a:active {
     text-align: left; /* kumotaan keskitys laatikon sisällä */
 	margin-top: 40px;
     /* background-color: honeydew;  vanha taustaväri */
-    background-image: url('../public/img/Yhteystiedot.jpg');
+    background-image: url('/img/yhteystiedot.jpg');
     background-size: cover; /* täyttää koko laatikon, skaalaus */
     background-position: right; 
     background-repeat: no-repeat; /* estää kuvan toistumisen */
