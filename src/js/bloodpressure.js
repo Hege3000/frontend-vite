@@ -65,15 +65,15 @@ const renderCards = (measurements) => {
                 <p><strong>Muistiinpanot:</strong> ${bp.notes || '-'}</p>
             </div>
             <div class="bp-card-actions">
-                <button class="editBpBtn" data-id="${bp.measurement_id}">Muokkaa</button>
-                <button class="deleteBpBtn" data-id="${bp.measurement_id}">Poista</button>
+                <button class="editBpBtn" data-id="${bp.bp_id}">Muokkaa</button>
+                <button class="deleteBpBtn" data-id="${bp.bp_id}">Poista</button>
             </div>
         `;
 
         card.querySelector('.editBpBtn').addEventListener('click', () => openEditDialog(bp));
         card.querySelector('.deleteBpBtn').addEventListener('click', async () => {
             if (!confirm('Haluatko varmasti poistaa tämän mittauksen?')) return;
-            await deleteBp(bp.measurement_id);
+            await deleteBp(bp.bp_id);
         });
 
         bpContainer.appendChild(card);
@@ -161,7 +161,7 @@ const deleteBp = async (id) => {
 
 // Avaa dialog muokkausta varten
 const openEditDialog = (bp) => {
-    document.getElementById('editBpId').value = bp.measurement_id;
+    document.getElementById('editBpId').value = bp.bp_id;
     document.getElementById('editSystolic').value = bp.systolic || '';
     document.getElementById('editDiastolic').value = bp.diastolic || '';
     document.getElementById('editPulse').value = bp.pulse || '';
