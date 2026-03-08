@@ -183,6 +183,6 @@ Opiskelija on tarkistanut, ymmärtää ja osaa selittää kaiken koodissa olevan
 
 ## Linkit
 
-- 🌐 Julkaistu sovellus: `https://users.metropolia.fi/~tunnus/terveyspaivakirja/`
-- 📁 Frontend-repo: *(lisää GitHub-linkki)*
-- 📁 Backend-repo: *(lisää GitHub-linkki)*
+- 🌐 Julkaistu sovellus: https://users.metropolia.fi/~henrijja/HYTE-kevat-26/Frontend/
+- 📁 Frontend-repo: https://github.com/Hege3000/frontend-vite/tree/week8-palautus
+- 📁 Backend-repo: https://github.com/Hege3000/backend/tree/week8-palautus
