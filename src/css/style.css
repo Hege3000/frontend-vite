@@ -1,28 +1,4 @@
-/*////////////////////
-        // Positioning items    
-        //////////////////////
-        
-        Reset *
-        Display: inline vs block
-        https://www.w3schools.com/cssref/pr_class_display.asp
-    
-        Box-sizing
-        https://www.w3schools.com/css/css3_box-sizing.asp
-        
-        Using percentages and max-width
-        https://www.w3schools.com/cssref/css_units.asp
-        Centering
-        https://www.w3schools.com/css/css_align.asp
-    
-        Float and clear
-        https://www.w3schools.com/cssref/pr_class_float.asp
-                
-        Absolute/Relative positioning
-        https://www.w3schools.com/cssref/pr_class_position.asp
-        
-        
-        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
-        */
+
 
       /* --- PERUSASETUKSET --- */
 * {
@@ -215,4 +191,24 @@ footer {
         display: block;
         padding: 15px 0;        /* Tehdään linkeistä helpommin klikattavia sormella */
     }
+}
+
+.nav-user {
+    color: white;
+    padding: 15px 20px;
+    float: right;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.logout-btn:hover {
+    background-color: #555;
+    color: coral;
 }

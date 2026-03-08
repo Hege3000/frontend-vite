@@ -9,6 +9,9 @@ export default defineConfig({
         // List your html files here, e.g:
         main: resolve(__dirname, 'index.html'),
         bmi: resolve(__dirname, 'bmi.html'),
+        login: resolve(__dirname, 'login.html'),
+        paivakirja: resolve(__dirname, 'paivakirja.html'),
+        verenpaine: resolve(__dirname, 'verenpaine.html'),
       },
     },
   },
