@@ -55,7 +55,7 @@ const getEntries = async () => {
         const date = new Date(entry.entry_date).toLocaleDateString('fi-FI');
 
         card.innerHTML = `
-            <img src="/img/paivakirja.jpg" alt="päiväkirja" style="width:100%; height:180px; object-fit:cover;" />
+            <img src="./img/paivakirja.jpg" alt="päiväkirja" style="width:100%; height:180px; object-fit:cover;" />
             <div class="card-text">
                 <p><strong>Päivämäärä:</strong> ${date}</p>
                 <p><strong>Mieliala:</strong> ${entry.mood || '-'}</p>

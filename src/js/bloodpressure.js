@@ -56,7 +56,7 @@ const renderCards = (measurements) => {
         const card = document.createElement('div');
         card.classList.add('bp-card');
         card.innerHTML = `
-                <img src="/img/verenpaine.jpg" alt="verenpaine" style="width:100%; height:180px; object-fit:cover;" />
+                <img src="./img/verenpaine.jpg" alt="verenpaine" style="width:100%; height:180px; object-fit:cover;" />
                 <div class="bp-card-text">
                 <p class="bp-value ${status.css}">${bp.systolic}/${bp.diastolic} mmHg</p>
                 <p><strong>Tila:</strong> <span class="${status.css}">${status.label}</span></p>
