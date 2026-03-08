@@ -9,7 +9,8 @@ const showMessage = (elementId, message, isError = false) => {
   el.className = isError ? 'error' : 'success';
 };
 
-// Kirjautuminen
+// kirjautuminen - lähettää tunnukset backendille 
+// AI-assisted Gemini
 const loginForm = document.querySelector('.loginForm');
 loginForm.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -28,19 +29,19 @@ loginForm.addEventListener('submit', async (event) => {
     return;
   }
 
-  // tallennetaan token ja käyttäjänimi localStorageen
+  // tallennetaan token ja käyttäjänimi localStorageen - Gemini
   localStorage.setItem('token', response.token);
   localStorage.setItem('name', response.user.username);
 
   showMessage('loginMessage', 'Kirjautuminen onnistui! Ohjataan päiväkirjaan...');
 
-  // ohjataan päiväkirjasivulle 2 sekunnin kuluttua
+  // ohjataan päiväkirjasivulle 2 sekunnin kuluttua - Gemini
   setTimeout(() => {
     window.location.href = 'paivakirja.html';
   }, 2000);
 });
 
-// Rekisteröityminen
+// rekisteröityminen - lähettää uuden käyttäjän tiedot backendille
 const registerForm = document.querySelector('.registerForm');
 registerForm.addEventListener('submit', async (event) => {
   event.preventDefault();

@@ -1,14 +1,17 @@
+// AI-assisted: tiedoston rakenne ja logiikka toteutettu AI:n avulla
 import { fetchData } from './fetch.js';
 
 const API_URL = 'http://localhost:3000/api';
 const bpContainer = document.querySelector('.bp-card-area');
 
+// näyttää onnistumis- tai virheviestin käyttäjälle
 const showMessage = (elementId, message, isError = false) => {
     const el = document.getElementById(elementId);
     el.textContent = message;
     el.className = isError ? 'error' : 'success';
 };
 
+// hakee tokenin localStoragesta ja palauttaa Authorization-otsikon
 const getAuthHeaders = () => {
     const token = localStorage.getItem('token');
     return token ? { Authorization: `Bearer ${token}` } : {};
@@ -77,7 +80,7 @@ const renderCards = (measurements) => {
     });
 };
 
-// Hae kaikki mittaukset
+// hae kaikki mittaukset
 const getBp = async (params = '') => {
     const response = await fetchData(`${API_URL}/bloodpressure${params}`, {
         headers: getAuthHeaders(),

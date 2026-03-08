@@ -3,14 +3,14 @@ import { fetchData } from './fetch.js';
 const API_URL = 'http://localhost:3000/api';
 const diaryContainer = document.querySelector('.diary-card-area');
 
-// Näytetään viesti
+// näytetään viesti
 const showMessage = (elementId, message, isError = false) => {
     const el = document.getElementById(elementId);
     el.textContent = message;
     el.className = isError ? 'error' : 'success';
 };
 
-// Haetaan token localStoragesta
+// haetaan token localStoragesta ja palauttaa Auth.-otsikon? - Gemini  
 const getAuthHeaders = () => {
     const token = localStorage.getItem('token');
     return token ? { Authorization: `Bearer ${token}` } : {};

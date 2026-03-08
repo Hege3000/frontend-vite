@@ -3,9 +3,11 @@ const lowBmi = `Jos painoindeksi on alle 18,5, se merkitsee liiallista laihuutta
 const normalBmi = `Normaaliksi on valittu se painoindeksin alue, jossa ihmisen terveys on parhaimmillaan. Normaali painoindeksin alue on välillä 18,5–25.`;
 const highBmi = `Kun painoindeksi ylittää 25, ollaan liikapainon puolella. Liikakilojen määrä voi vaihdella erittäin paljon, muutamasta kilosta moniin kymmeniin kiloihin.`;
 
+// nollaa BMI-tulosten tyylit ja oletusteksti 
 const analysis = document.querySelector('.analysis');
 const bmiForm = document.querySelector('.bmi-form');
 
+// näyttää BMI-tuloksen ja korostaa oikean alueen - suoraan esimerkkikoodista
 const resetBMIStyles = () => {
     analysis.textContent = 'Syötä pituus ja paino laskeaksesi BMI.';
     document.querySelector('.bmi0-19').classList.remove('lowBmi');
@@ -27,6 +29,13 @@ const showResult = (bmi) => {
     }
 };
 
+/**
+ * Laskee BMI:n valitulla menetelmällä.
+ * Perinteinen kaava: paino / pituus²
+ * Trefethenin korjattu kaava: 1.3 * paino / pituus^2.5
+ * Lähde: Nick Trefethen, Oxford (2013) - https://people.maths.ox.ac.uk/trefethen/bmi.html
+ * AI-assisted: kaavan nimi ja muoto selvitetty ChatGPT:n avulla
+ */
 const calculateBMI = (weight, height) => {
     const heightM = height / 100;
     const method = document.querySelector('input[name="bmiMethod"]:checked').value;

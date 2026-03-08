@@ -1,6 +1,7 @@
 /**
  * Fetches JSON data from APIs
- *
+ * AI-assisted: virheenkäsittelyn rakenne toteutettu AI:n avulla - Claude / Gemini
+ * 
  * @param {string} url - api endpoint url
  * @param {Object} options - request options
  *
