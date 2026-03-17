@@ -1,5 +1,5 @@
 # Vaaditut ohjelmat ja kirjastot asennettu
-# tehtävän mukaiset testit suoritettu
+# tehtävän 1 mukaiset testit suoritettu
 # requirements.txt
 certifi==2026.2.25
 cffi==2.0.0
