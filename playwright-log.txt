@@ -1,117 +1,30 @@
-{"level":30,"time":"2026-03-29T18:18:30.412Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Listening on 127.0.0.1:51622"}
-{"level":30,"time":"2026-03-29T18:18:30.496Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-03-29T18:18:32.125Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
-{"level":30,"time":"2026-03-29T18:18:32.126Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-03-29T18:18:32.127Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-03-29T18:18:32.147Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-03-29T18:18:32.148Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@0b2d4db8ee2a565cd469bc6d86bc8b29\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=9524f7fc-0b7c-4a65-b8d1-9a51da691b4a\"}"}
-{"level":30,"time":"2026-03-29T18:18:32.225Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Setting default timeout for context context=d43ffd25-fed7-4cab-8a18-114e27d8409f to 10000"}
-{"level":30,"time":"2026-03-29T18:18:32.225Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Changed active context: context=d43ffd25-fed7-4cab-8a18-114e27d8409f"}
-{"level":30,"time":"2026-03-29T18:18:32.758Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Video path: undefined"}
-{"level":30,"time":"2026-03-29T18:18:32.759Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Changed active page"}
-{"level":30,"time":"2026-03-29T18:18:33.623Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method newPage"}
-{"level":30,"time":"2026-03-29T18:18:33.714Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method typeText"}
-{"level":30,"time":"2026-03-29T18:18:33.715Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginUsername in page."}
-{"level":30,"time":"2026-03-29T18:18:34.769Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method typeText"}
-{"level":30,"time":"2026-03-29T18:18:34.777Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method typeText"}
-{"level":30,"time":"2026-03-29T18:18:34.777Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginPassword in page."}
-{"level":30,"time":"2026-03-29T18:18:35.727Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method typeText"}
-{"level":30,"time":"2026-03-29T18:18:35.743Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-29T18:18:35.743Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with .loginForm >> button in page."}
-{"level":30,"time":"2026-03-29T18:18:37.812Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method click"}
-{"level":30,"time":"2026-03-29T18:18:37.819Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:37.819Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:37.875Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:37.875Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:37.891Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:37.891Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:37.913Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:37.913Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:37.929Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:37.929Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:37.951Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:37.951Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:37.967Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:37.967Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:37.988Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:37.988Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.004Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.004Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.026Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.026Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.041Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.041Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.062Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.062Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.077Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.077Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.098Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.098Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.114Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.114Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.136Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.136Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.151Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.151Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.174Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.174Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.189Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.189Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.211Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.211Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.226Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.226Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.244Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.244Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.258Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.258Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.278Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.278Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.292Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.292Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.311Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.311Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.326Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.326Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.344Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.344Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.358Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.359Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.382Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.382Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.398Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.398Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.421Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.421Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.436Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.436Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.456Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.456Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.471Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.471Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.488Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.489Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.503Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.503Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.539Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.539Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.566Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.566Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.582Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.582Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.597Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.597Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.614Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.614Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.628Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.628Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.646Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.646Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.660Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.660Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.679Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing "}
-{"level":30,"time":"2026-03-29T18:18:38.679Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.693Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-29T18:18:38.693Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
-{"level":30,"time":"2026-03-29T18:18:38.717Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing Kirjautuminen onnistui! Ohjataan päiväkirjaan..."}
-{"level":30,"time":"2026-03-29T18:18:38.717Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-29T19:09:10.496Z","pid":31364,"hostname":"HenrinPCMR","msg":"Listening on 127.0.0.1:28887"}
+{"level":30,"time":"2026-03-29T19:09:10.783Z","pid":31364,"hostname":"HenrinPCMR","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-29T19:09:11.106Z","pid":31364,"hostname":"HenrinPCMR","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-29T19:09:11.106Z","pid":31364,"hostname":"HenrinPCMR","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-29T19:09:11.106Z","pid":31364,"hostname":"HenrinPCMR","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-29T19:09:11.127Z","pid":31364,"hostname":"HenrinPCMR","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-29T19:09:11.128Z","pid":31364,"hostname":"HenrinPCMR","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@7132a9badf754143a7ed3c96ff19c632\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=6636e56e-165d-423b-8a9a-16beb4802867\"}"}
+{"level":30,"time":"2026-03-29T19:09:11.141Z","pid":31364,"hostname":"HenrinPCMR","msg":"Setting default timeout for context context=4fca89bd-b918-49cb-8230-db5bb205ae7c to 10000"}
+{"level":30,"time":"2026-03-29T19:09:11.141Z","pid":31364,"hostname":"HenrinPCMR","msg":"Changed active context: context=4fca89bd-b918-49cb-8230-db5bb205ae7c"}
+{"level":30,"time":"2026-03-29T19:09:11.329Z","pid":31364,"hostname":"HenrinPCMR","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-29T19:09:11.330Z","pid":31364,"hostname":"HenrinPCMR","msg":"Changed active page"}
+{"level":30,"time":"2026-03-29T19:09:11.464Z","pid":31364,"hostname":"HenrinPCMR","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-29T19:09:11.468Z","pid":31364,"hostname":"HenrinPCMR","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-03-29T19:09:11.469Z","pid":31364,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-03-29T19:09:11.536Z","pid":31364,"hostname":"HenrinPCMR","msg":"Option entries: 4"}
+{"level":30,"time":"2026-03-29T19:09:11.536Z","pid":31364,"hostname":"HenrinPCMR","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-03-29T19:09:11.536Z","pid":31364,"hostname":"HenrinPCMR","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-03-29T19:09:11.540Z","pid":31364,"hostname":"HenrinPCMR","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-29T19:09:11.540Z","pid":31364,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2026-03-29T19:09:11.587Z","pid":31364,"hostname":"HenrinPCMR","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-29T19:09:11.590Z","pid":31364,"hostname":"HenrinPCMR","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:09:11.590Z","pid":31364,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=my-check-1 in page."}
+{"level":30,"time":"2026-03-29T19:09:11.597Z","pid":31364,"hostname":"HenrinPCMR","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:09:11.600Z","pid":31364,"hostname":"HenrinPCMR","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:09:11.600Z","pid":31364,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=my-check-2 in page."}
+{"level":30,"time":"2026-03-29T19:09:11.704Z","pid":31364,"hostname":"HenrinPCMR","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:09:11.708Z","pid":31364,"hostname":"HenrinPCMR","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-29T19:09:11.709Z","pid":31364,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=my-radio-1 in page."}
+{"level":30,"time":"2026-03-29T19:09:12.071Z","pid":31364,"hostname":"HenrinPCMR","msg":"End of node method click"}
+{"level":30,"time":"2026-03-29T19:09:38.114Z","pid":31364,"hostname":"HenrinPCMR","msg":"Removed page=cc003372-39e9-4d57-9025-d7c5191b5711 from context=4fca89bd-b918-49cb-8230-db5bb205ae7c page stack"}

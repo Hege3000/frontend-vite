@@ -1,80 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.11.9 on win32)" generated="2026-03-29T21:18:22.275473" rpa="false" schemaversion="5">
-<suite id="s1" name="Browser Demo" source="C:\metropolia_projektit\HYTE-kevat-26\frontend-vite\tests\tehtavat\browser_demo.robot">
-<test id="s1-t1" name="Test Web Form" line="6">
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-03-29T22:10:24.119929" rpa="false" schemaversion="5">
+<suite id="s1" name="Browser Demo 2" source="C:\Metropolia_projektit\HYTE-kevat-26\frontend-vite\tests\tehtavat\browser_demo_2.robot">
+<test id="s1-t1" name="Suorita Tehtava 3 Web Form" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-03-29T21:18:24.711311" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\browser\\traces\\temp\\59c5590a-ae9e-4759-9850-f6cfab3ecd4c"}</msg>
-<msg time="2026-03-29T21:18:24.921762" level="INFO">Starting Browser process C:\metropolia_projektit\HYTE-kevat-26\frontend-vite\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51622</msg>
-<msg time="2026-03-29T21:18:32.121655" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\browser\\traces\\temp\\59c5590a-ae9e-4759-9850-f6cfab3ecd4c"}</msg>
+<msg time="2026-03-29T22:10:24.413278" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\browser\\traces\\temp\\ccdd71cc-82b6-47a0-9ad9-d7318c42cc27"}</msg>
+<msg time="2026-03-29T22:10:24.484084" level="INFO">Starting Browser process C:\Metropolia_projektit\HYTE-kevat-26\frontend-vite\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:28930</msg>
+<msg time="2026-03-29T22:10:25.726871" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\browser\\traces\\temp\\ccdd71cc-82b6-47a0-9ad9-d7318c42cc27"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-29T21:18:24.708311" elapsed="7.413344"/>
+<status status="PASS" start="2026-03-29T22:10:24.412022" elapsed="1.315007"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-03-29T21:18:33.627428" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
-<msg time="2026-03-29T21:18:33.627428" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>http://localhost:5173/login.html</arg>
+<msg time="2026-03-29T22:10:26.092656" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2026-03-29T22:10:26.092764" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-29T21:18:32.137278" elapsed="1.490150"/>
+<status status="PASS" start="2026-03-29T22:10:25.735145" elapsed="0.357846"/>
 </kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2026-03-29T21:18:33.705170" level="INFO">Title: 'Miten menee? - Kirjaudu'</msg>
-<arg>==</arg>
-<arg>Miten menee? - Kirjaudu</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-03-29T22:10:26.094848" level="INFO">Selects the option(s) 2 by attribute SelectAttribute.value from element [name="my-select"].</msg>
+<arg>[name="my-select"]</arg>
+<arg>value</arg>
+<arg>2</arg>
 <tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2026-03-29T21:18:33.639450" elapsed="0.065720"/>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T22:10:26.093986" elapsed="0.084787"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-03-29T21:18:33.705170" level="INFO">Types the text 'hege3001' in the given field.</msg>
-<arg>id=loginUsername</arg>
-<arg>${Username}</arg>
-<arg>delay=0.1 s</arg>
+<msg time="2026-03-29T22:10:26.180007" level="INFO">Types the text 'Helsinki' in the given field.</msg>
+<arg>[name="my-datalist"]</arg>
+<arg>Helsinki</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T21:18:33.705170" elapsed="1.062534"/>
+<status status="PASS" start="2026-03-29T22:10:26.179181" elapsed="0.058555"/>
 </kw>
-<kw name="Type Secret" owner="Browser">
-<arg>id=loginPassword</arg>
-<arg>$Password</arg>
-<arg>delay=0.1 s</arg>
+<kw name="Check Checkbox" owner="Browser">
+<arg>id=my-check-1</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Types the given secret from ``variable_name`` into the text field
-found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T21:18:34.767704" elapsed="0.959694"/>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T22:10:26.238061" elapsed="0.014328"/>
 </kw>
-<kw name="Click With Options" owner="Browser">
-<msg time="2026-03-29T21:18:35.727398" level="INFO">Clicks the element '.loginForm &gt;&gt; button'.</msg>
-<arg>.loginForm &gt;&gt; button</arg>
-<arg>delay=2 s</arg>
+<kw name="Check Checkbox" owner="Browser">
+<arg>id=my-check-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T22:10:26.252912" elapsed="0.142922"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-29T22:10:26.397153" level="INFO">Clicks the element 'id=my-radio-1'.</msg>
+<arg>id=my-radio-1</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T21:18:35.727398" elapsed="2.085950"/>
+<status status="PASS" start="2026-03-29T22:10:26.396306" elapsed="0.078344"/>
+</kw>
+<kw name="Upload File By Selector" owner="Browser">
+<arg>[name="my-file"]</arg>
+<arg>C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\tests\\tehtavat/testi.txt</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Uploads file from ``path`` to file input element matched by selector.</doc>
+<status status="PASS" start="2026-03-29T22:10:26.474953" elapsed="0.014834"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-29T22:10:26.491432" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<arg>button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T22:10:26.490568" elapsed="0.152465"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-29T21:18:38.719437" level="INFO">Text: 'Kirjautuminen onnistui! Ohjataan päiväkirjaan...'</msg>
-<arg>id=loginMessage</arg>
-<arg>*=</arg>
-<arg>Kirjautuminen onnistui</arg>
+<msg time="2026-03-29T22:10:26.685223" level="INFO">Text: 'Form submitted'</msg>
+<arg>h1</arg>
+<arg>==</arg>
+<arg>Form submitted</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T21:18:37.814348" elapsed="0.905568"/>
+<status status="PASS" start="2026-03-29T22:10:26.643636" elapsed="0.041700"/>
 </kw>
-<status status="PASS" start="2026-03-29T21:18:24.692393" elapsed="14.028195"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-29T22:10:36.686378" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-29T22:10:26.685627" elapsed="10.000857"/>
+</kw>
+<status status="PASS" start="2026-03-29T22:10:24.411021" elapsed="12.275805"/>
 </test>
-<status status="PASS" start="2026-03-29T21:18:22.291097" elapsed="16.435938"/>
+<status status="PASS" start="2026-03-29T22:10:24.122274" elapsed="12.568026"/>
 </suite>
 <statistics>
 <total>
@@ -83,7 +107,7 @@ found by ``selector``.</doc>
 <tag>
 </tag>
 <suite>
-<stat name="Browser Demo" id="s1" pass="1" fail="0" skip="0">Browser Demo</stat>
+<stat name="Browser Demo 2" id="s1" pass="1" fail="0" skip="0">Browser Demo 2</stat>
 </suite>
 </statistics>
 <errors>
