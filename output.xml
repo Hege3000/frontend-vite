@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.9 on win32)" generated="2026-03-29T21:18:22.275473" rpa="false" schemaversion="5">
+<suite id="s1" name="Browser Demo" source="C:\metropolia_projektit\HYTE-kevat-26\frontend-vite\tests\tehtavat\browser_demo.robot">
+<test id="s1-t1" name="Test Web Form" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-29T21:18:24.711311" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\browser\\traces\\temp\\59c5590a-ae9e-4759-9850-f6cfab3ecd4c"}</msg>
+<msg time="2026-03-29T21:18:24.921762" level="INFO">Starting Browser process C:\metropolia_projektit\HYTE-kevat-26\frontend-vite\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51622</msg>
+<msg time="2026-03-29T21:18:32.121655" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\browser\\traces\\temp\\59c5590a-ae9e-4759-9850-f6cfab3ecd4c"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-29T21:18:24.708311" elapsed="7.413344"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-29T21:18:33.627428" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-03-29T21:18:33.627428" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-29T21:18:32.137278" elapsed="1.490150"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-03-29T21:18:33.705170" level="INFO">Title: 'Miten menee? - Kirjaudu'</msg>
+<arg>==</arg>
+<arg>Miten menee? - Kirjaudu</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-29T21:18:33.639450" elapsed="0.065720"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-03-29T21:18:33.705170" level="INFO">Types the text 'hege3001' in the given field.</msg>
+<arg>id=loginUsername</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T21:18:33.705170" elapsed="1.062534"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>id=loginPassword</arg>
+<arg>$Password</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T21:18:34.767704" elapsed="0.959694"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-03-29T21:18:35.727398" level="INFO">Clicks the element '.loginForm &gt;&gt; button'.</msg>
+<arg>.loginForm &gt;&gt; button</arg>
+<arg>delay=2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T21:18:35.727398" elapsed="2.085950"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-29T21:18:38.719437" level="INFO">Text: 'Kirjautuminen onnistui! Ohjataan päiväkirjaan...'</msg>
+<arg>id=loginMessage</arg>
+<arg>*=</arg>
+<arg>Kirjautuminen onnistui</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-29T21:18:37.814348" elapsed="0.905568"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:18:24.692393" elapsed="14.028195"/>
+</test>
+<status status="PASS" start="2026-03-29T21:18:22.291097" elapsed="16.435938"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Browser Demo" id="s1" pass="1" fail="0" skip="0">Browser Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
