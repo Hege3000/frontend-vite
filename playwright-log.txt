@@ -115,3 +115,4 @@
 {"level":30,"time":"2026-03-29T18:18:38.693Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Strict mode is enabled, find Locator with id=loginMessage in page."}
 {"level":30,"time":"2026-03-29T18:18:38.717Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Retrieved text for element id=loginMessage containing Kirjautuminen onnistui! Ohjataan päiväkirjaan..."}
 {"level":30,"time":"2026-03-29T18:18:38.717Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-29T18:23:21.613Z","pid":15204,"hostname":"Acer-Aspire-E15","msg":"Removed page=363da68b-e64d-4150-bb2b-d23b3c47f7a5 from context=d43ffd25-fed7-4cab-8a18-114e27d8409f page stack"}
