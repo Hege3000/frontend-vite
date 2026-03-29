@@ -1,0 +1,40 @@
+{"level":30,"time":"2026-03-29T19:18:22.457Z","pid":30960,"hostname":"HenrinPCMR","msg":"Listening on 127.0.0.1:29078"}
+{"level":30,"time":"2026-03-29T19:18:22.699Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-29T19:18:22.980Z","pid":30960,"hostname":"HenrinPCMR","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-29T19:18:22.980Z","pid":30960,"hostname":"HenrinPCMR","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-29T19:18:22.980Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-29T19:18:22.987Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-29T19:18:22.988Z","pid":30960,"hostname":"HenrinPCMR","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@196653bd4aeb63de565e9248a2167b23\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=c0acf59f-ae0e-4253-89b6-32a9b30ff3e0\"}"}
+{"level":30,"time":"2026-03-29T19:18:23.017Z","pid":30960,"hostname":"HenrinPCMR","msg":"Setting default timeout for context context=c318720b-6720-4a37-9da1-84897fcc40ff to 10000"}
+{"level":30,"time":"2026-03-29T19:18:23.017Z","pid":30960,"hostname":"HenrinPCMR","msg":"Changed active context: context=c318720b-6720-4a37-9da1-84897fcc40ff"}
+{"level":30,"time":"2026-03-29T19:18:23.194Z","pid":30960,"hostname":"HenrinPCMR","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-29T19:18:23.194Z","pid":30960,"hostname":"HenrinPCMR","msg":"Changed active page"}
+{"level":30,"time":"2026-03-29T19:18:23.473Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-29T19:18:23.483Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-03-29T19:18:23.483Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-03-29T19:18:23.548Z","pid":30960,"hostname":"HenrinPCMR","msg":"Option entries: 4"}
+{"level":30,"time":"2026-03-29T19:18:23.548Z","pid":30960,"hostname":"HenrinPCMR","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-03-29T19:18:23.548Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-03-29T19:18:23.552Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-29T19:18:23.552Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2026-03-29T19:18:23.605Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-29T19:18:23.608Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:18:23.608Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=my-check-1 in page."}
+{"level":30,"time":"2026-03-29T19:18:23.622Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:18:23.625Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:18:23.626Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=my-check-2 in page."}
+{"level":30,"time":"2026-03-29T19:18:23.671Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2026-03-29T19:18:23.674Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-29T19:18:23.674Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=my-radio-1 in page."}
+{"level":30,"time":"2026-03-29T19:18:23.944Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method click"}
+{"level":30,"time":"2026-03-29T19:18:23.950Z","pid":30960,"hostname":"HenrinPCMR","msg":"Reading multiplepart uploadFileBySelector"}
+{"level":30,"time":"2026-03-29T19:18:23.950Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with [name=\"my-file\"] in page."}
+{"level":30,"time":"2026-03-29T19:18:23.950Z","pid":30960,"hostname":"HenrinPCMR","msg":"Uploading file(s) C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\tests\\tehtavat\\testi.txt to [name=\"my-file\"]"}
+{"level":30,"time":"2026-03-29T19:18:23.963Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-29T19:18:23.963Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-29T19:18:23.995Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method click"}
+{"level":30,"time":"2026-03-29T19:18:23.999Z","pid":30960,"hostname":"HenrinPCMR","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-29T19:18:24.000Z","pid":30960,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2026-03-29T19:18:24.036Z","pid":30960,"hostname":"HenrinPCMR","msg":"Retrieved text for element h1 containing Form submitted"}
+{"level":30,"time":"2026-03-29T19:18:24.036Z","pid":30960,"hostname":"HenrinPCMR","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-29T19:19:07.010Z","pid":30960,"hostname":"HenrinPCMR","msg":"Removed page=86aab739-b183-4f72-8ff2-4470e5d00b04 from context=c318720b-6720-4a37-9da1-84897fcc40ff page stack"}
