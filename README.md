@@ -144,6 +144,46 @@ Frontend on julkaistu Metropolian palvelimella. Backend käynnistetään paikall
 ```bash
 cd BE && npm run dev
 ```
+## Ohjelmistotestaus
+
+### Tehtävä 1 — Asennukset
+Asensin Robot Frameworkin ja sen lisäosat virtuaaliympäristöön.
+
+### Tehtävä 2 — Kirjautumistesti
+Tein kirjautumistestin omalle sovellukselle. Testi tarkistaa onnistuneen ja epäonnistuneen kirjautumisen.
+- [login_test.robot](tests/front/login_test.robot)
+- [Lokitiedosto](outputs/log.html)
+- [Raportti](outputs/report.html)
+
+### Tehtävä 3 — Web form -testi
+Testasin Selenium Web Form -sivun kenttiä.
+- [webform_test.robot](tests/front/webform_test.robot)
+
+### Tehtävä 4 — Päiväkirjamerkinnän lisääminen
+Testi kirjautuu sovellukseen ja lisää uuden päiväkirjamerkinnän.
+- [entry_test.robot](tests/front/entry_test.robot)
+
+### Tehtävä 5 — .env-tiedosto
+Käyttäjätunnus ja salasana piilotettu .env-tiedostoon.
+- [login_test.robot](tests/front/login_test.robot)
+
+### Tehtävä 6 — CryptoLibrary
+Käyttäjätunnus ja salasana salattu CryptoLibraryllä.
+- [crypto_login_test.robot](tests/front/crypto_login_test.robot)
+
+### Tehtävä 7 — Tulostiedostot
+Testien loki- ja raporttitiedostot ohjattu outputs/-kansioon.
+
+### Tehtävä 8 — GitHub Pages
+Testiraportit nähtävissä GitHub Pages -sivustolla.
+- [Lokitiedosto](https://Hege3000.github.io/frontend-vite/outputs/log.html)
+- [Raportti](https://Hege3000.github.io/frontend-vite/outputs/report.html)
+
+### Tehtävä 9 — Taustapalvelimen testaus
+Testasin backendin API-endpointteja RequestsLibraryllä.
+- [api_test.robot](tests/back/api_test.robot)
+
+
 ## Testausraportit
 
 - [Lokitiedosto](outputs/log.html)
