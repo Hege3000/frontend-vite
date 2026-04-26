@@ -144,7 +144,10 @@ Frontend on julkaistu Metropolian palvelimella. Backend käynnistetään paikall
 ```bash
 cd BE && npm run dev
 ```
+## Testausraportit
 
+- [Lokitiedosto](outputs/log.html)
+- [Raportti](outputs/report.html)
 ---
 
 ## Käytetyt lähteet ja AI:n hyödyntäminen

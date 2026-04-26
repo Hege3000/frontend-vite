@@ -1,0 +1,45 @@
+{"level":30,"time":"2026-04-26T13:33:35.455Z","pid":13068,"hostname":"HenrinPCMR","msg":"Listening on 127.0.0.1:51800"}
+{"level":30,"time":"2026-04-26T13:33:35.641Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-26T13:33:35.937Z","pid":13068,"hostname":"HenrinPCMR","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-26T13:33:35.937Z","pid":13068,"hostname":"HenrinPCMR","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-26T13:33:35.937Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-26T13:33:35.945Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-26T13:33:35.946Z","pid":13068,"hostname":"HenrinPCMR","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@eb311f0c16897cdf1d84045f381d9f17\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=336ed10d-b1f0-4730-a507-12c00c2f695d\"}"}
+{"level":30,"time":"2026-04-26T13:33:35.963Z","pid":13068,"hostname":"HenrinPCMR","msg":"Setting default timeout for context context=a62f385d-f516-4d74-8594-8b622c1ad3f1 to 10000"}
+{"level":30,"time":"2026-04-26T13:33:35.963Z","pid":13068,"hostname":"HenrinPCMR","msg":"Changed active context: context=a62f385d-f516-4d74-8594-8b622c1ad3f1"}
+{"level":30,"time":"2026-04-26T13:33:36.215Z","pid":13068,"hostname":"HenrinPCMR","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-26T13:33:36.215Z","pid":13068,"hostname":"HenrinPCMR","msg":"Changed active page"}
+{"level":30,"time":"2026-04-26T13:33:36.303Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-26T13:33:36.376Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:36.376Z","pid":13068,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=loginUsername in page."}
+{"level":30,"time":"2026-04-26T13:33:37.288Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:37.291Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:37.291Z","pid":13068,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=loginPassword in page."}
+{"level":30,"time":"2026-04-26T13:33:38.164Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:38.169Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-26T13:33:38.169Z","pid":13068,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with form.loginForm >> button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-04-26T13:33:40.203Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method click"}
+{"level":30,"time":"2026-04-26T13:33:43.214Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-04-26T13:33:43.215Z","pid":13068,"hostname":"HenrinPCMR","Take screenshot with options: ":{"path":"C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\outputs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-04-26T13:33:43.307Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-04-26T13:33:45.315Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-04-26T13:33:45.315Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-04-26T13:33:45.319Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-26T13:33:45.319Z","pid":13068,"hostname":"HenrinPCMR","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@eb311f0c16897cdf1d84045f381d9f17\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=a62f385d-f516-4d74-8594-8b622c1ad3f1\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@33407f0bc25e2246a9e0336108b8bd84\"},\"pageStack\":[{\"id\":\"page=ab728bd5-353c-4807-9399-399c96d25415\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@816b9b27a4c3f6d079b16837fe6c1573\"},\"timestamp\":1777210416.215,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"debug\",\"text\":\"[vite] connecting...\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":732,\"columnNumber\":8},\"time\":\"2026-04-26T13:33:36.298Z\"},{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"current-password\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"http://localhost:5173/login.html\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2026-04-26T13:33:36.302Z\"},{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"current-password\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"http://localhost:5173/login.html\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2026-04-26T13:33:36.302Z\"},{\"type\":\"debug\",\"text\":\"[vite] connected.\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":826,\"columnNumber\":11},\"time\":\"2026-04-26T13:33:36.306Z\"},{\"type\":\"error\",\"text\":\"Failed to load resource: the server responded with a status of 404 (Not Found)\",\"location\":{\"url\":\"http://localhost:5173/favicon.ico\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2026-04-26T13:33:36.306Z\"},{\"type\":\"debug\",\"text\":\"[vite] connecting...\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":732,\"columnNumber\":8},\"time\":\"2026-04-26T13:33:42.645Z\"},{\"type\":\"debug\",\"text\":\"[vite] connected.\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":826,\"columnNumber\":11},\"time\":\"2026-04-26T13:33:42.652Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"traceFile\":\"\"}],\"id\":\"browser=336ed10d-b1f0-4730-a507-12c00c2f695d\"}"}
+{"level":30,"time":"2026-04-26T13:33:45.360Z","pid":13068,"hostname":"HenrinPCMR","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-26T13:33:45.360Z","pid":13068,"hostname":"HenrinPCMR","msg":"Changed active page"}
+{"level":30,"time":"2026-04-26T13:33:45.424Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-26T13:33:45.428Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:45.428Z","pid":13068,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=loginUsername in page."}
+{"level":30,"time":"2026-04-26T13:33:46.797Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:46.800Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:46.800Z","pid":13068,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with id=loginPassword in page."}
+{"level":30,"time":"2026-04-26T13:33:47.675Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-26T13:33:47.677Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-26T13:33:47.677Z","pid":13068,"hostname":"HenrinPCMR","msg":"Strict mode is enabled, find Locator with form.loginForm >> button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-04-26T13:33:49.705Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method click"}
+{"level":30,"time":"2026-04-26T13:33:49.713Z","pid":13068,"hostname":"HenrinPCMR","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-04-26T13:33:49.713Z","pid":13068,"hostname":"HenrinPCMR","Take screenshot with options: ":{"path":"C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\outputs\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-04-26T13:33:49.761Z","pid":13068,"hostname":"HenrinPCMR","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-04-26T14:47:20.996Z","pid":13068,"hostname":"HenrinPCMR","msg":"Removed page=8cbf2f3e-90f7-49fc-99a0-117173bc7a6f from context=a62f385d-f516-4d74-8594-8b622c1ad3f1 page stack"}
+{"level":30,"time":"2026-04-26T14:47:21.000Z","pid":13068,"hostname":"HenrinPCMR","msg":"Removed page=243aa713-1e42-440f-9547-bafb02f12ac0 from context=a62f385d-f516-4d74-8594-8b622c1ad3f1 page stack"}
