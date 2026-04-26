@@ -1,105 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-26T17:18:01.759898" rpa="false" schemaversion="5">
-<suite id="s1" name="Crypto Login Test" source="C:\Metropolia_projektit\HYTE-kevat-26\frontend-vite\tests\front\crypto_login_test.robot">
-<test id="s1-t1" name="Crypto Login Test" line="11">
-<kw name="New Browser" owner="Browser">
-<msg time="2026-04-26T17:18:02.680323" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\outputs\\browser\\traces\\temp\\444e5d55-ecb4-4749-adec-591b59a5205d"}</msg>
-<msg time="2026-04-26T17:18:02.772359" level="INFO">Starting Browser process C:\Metropolia_projektit\HYTE-kevat-26\frontend-vite\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53323</msg>
-<msg time="2026-04-26T17:18:04.147592" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Metropolia_projektit\\HYTE-kevat-26\\frontend-vite\\outputs\\browser\\traces\\temp\\444e5d55-ecb4-4749-adec-591b59a5205d"}</msg>
-<arg>chromium</arg>
-<arg>headless=No</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-04-26T17:18:02.679337" elapsed="1.468553"/>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-26T18:59:19.669823" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Test" source="C:\Metropolia_projektit\HYTE-kevat-26\frontend-vite\tests\back\api_test.robot">
+<kw name="Create Session" owner="RequestsLibrary" type="SETUP">
+<msg time="2026-04-26T18:59:20.000891" level="INFO">Creating Session using : alias=api, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api</arg>
+<arg>http://localhost:3000</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-04-26T18:59:20.000723" elapsed="0.000359"/>
 </kw>
-<kw name="New Page" owner="Browser">
-<msg time="2026-04-26T17:18:04.509892" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
-<msg time="2026-04-26T17:18:04.510022" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${URL}/login.html</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2026-04-26T17:18:04.151382" elapsed="0.358874"/>
+<test id="s1-t1" name="Get API Root" line="8">
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-04-26T18:59:22.122405" level="INFO">GET Request : url=http://localhost:3000/api 
+ path_url=/api 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-04-26T18:59:22.122526" level="INFO">GET Response : url=http://localhost:3000/api 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '70', 'ETag': 'W/"46-9y1NgOWgaNbbB0fH/4yja9F4AI8"', 'Date': 'Sun, 26 Apr 2026 15:59:22 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body=Hegen terveyspäiväkirjasovelluksenAPI täällä ja päällä. Terve! 
+ </msg>
+<msg time="2026-04-26T18:59:22.122653" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/api</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-04-26T18:59:20.001821" elapsed="2.120859"/>
 </kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2026-04-26T17:18:04.521742" level="INFO">Title: 'Miten menee? - Kirjaudu'</msg>
-<arg>==</arg>
-<arg>Miten menee? - Kirjaudu</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2026-04-26T17:18:04.511216" elapsed="0.010701"/>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.122953" elapsed="0.000229"/>
 </kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2026-04-26T17:18:04.526635" level="INFO">Types the text '***' in the given field.</msg>
-<arg>id=loginUsername</arg>
-<arg>${USERNAME}</arg>
-<arg>delay=0.1 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-04-26T17:18:04.525407" elapsed="0.918392"/>
-</kw>
-<kw name="Type Secret" owner="Browser">
-<arg>id=loginPassword</arg>
-<arg>$PASSWORD</arg>
-<arg>delay=0.1 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given secret from ``variable_name`` into the text field
-found by ``selector``.</doc>
-<status status="PASS" start="2026-04-26T17:18:05.444162" elapsed="0.878054"/>
-</kw>
-<kw name="Click With Options" owner="Browser">
-<msg time="2026-04-26T17:18:06.323413" level="INFO">Clicks the element 'form.loginForm &gt;&gt; button[type="submit"]'.</msg>
-<arg>form.loginForm &gt;&gt; button[type="submit"]</arg>
-<arg>delay=2 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-04-26T17:18:06.322643" elapsed="2.042062"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-26T17:18:11.365816" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-26T17:18:08.365034" elapsed="3.000908"/>
-</kw>
-<kw name="Get Url" owner="Browser">
-<arg>==</arg>
-<arg>${URL}/paivakirja.html</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the current URL.</doc>
-<status status="PASS" start="2026-04-26T17:18:11.366249" elapsed="0.002522"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<msg time="2026-04-26T17:18:11.467761" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-04-26T17:18:11.369192" elapsed="0.098722"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-26T17:18:13.469139" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-26T17:18:11.468372" elapsed="2.000897"/>
-</kw>
-<status status="PASS" start="2026-04-26T17:18:02.676032" elapsed="10.793568"/>
+<status status="PASS" start="2026-04-26T18:59:20.001281" elapsed="2.122183"/>
 </test>
-<status status="PASS" start="2026-04-26T17:18:01.762388" elapsed="11.710649"/>
+<test id="s1-t2" name="Login Test" line="12">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-26T18:59:22.124852" level="INFO">${body} = {'username': 'hege3001', 'password': 'hege3001'}</msg>
+<var>${body}</var>
+<arg>username=hege3001</arg>
+<arg>password=hege3001</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.124386" elapsed="0.000500"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-04-26T18:59:22.232747" level="INFO">POST Request : url=http://localhost:3000/api/users/login 
+ path_url=/api/users/login 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '48', 'Content-Type': 'application/json'} 
+ body=b'{"username": "hege3001", "password": "hege3001"}' 
+ </msg>
+<msg time="2026-04-26T18:59:22.232826" level="INFO">POST Response : url=http://localhost:3000/api/users/login 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '457', 'ETag': 'W/"1c9-2jdgVdYwKL5BacLVIRyw61KpcRI"', 'Date': 'Sun, 26 Apr 2026 15:59:22 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"message":"login ok","user":{"user_id":5,"username":"hege3001","email":"test3@gmail.com","created_at":"2026-04-26T12:53:48.000Z","user_level":"regular"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ1c2VybmFtZSI6ImhlZ2UzMDAxIiwiZW1haWwiOiJ0ZXN0M0BnbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyNi0wNC0yNlQxMjo1Mzo0OC4wMDBaIiwidXNlcl9sZXZlbCI6InJlZ3VsYXIiLCJpYXQiOjE3NzcyMTkxNjIsImV4cCI6MTc3NzMwNTU2Mn0.PDjnqwdVWZDFGnEccjMRvcjBLBpoWd4paqvsZ_7LpEk"} 
+ </msg>
+<msg time="2026-04-26T18:59:22.232950" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/api/users/login</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.125108" elapsed="0.107868"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.233241" elapsed="0.000241"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>token</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.233733" elapsed="0.000600"/>
+</kw>
+<status status="PASS" start="2026-04-26T18:59:22.123992" elapsed="0.110623"/>
+</test>
+<test id="s1-t3" name="Get Entries" line="18">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-26T18:59:22.235850" level="INFO">${body} = {'username': 'hege3001', 'password': 'hege3001'}</msg>
+<var>${body}</var>
+<arg>username=hege3001</arg>
+<arg>password=hege3001</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.235504" elapsed="0.000374"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-04-26T18:59:22.305008" level="INFO">POST Request : url=http://localhost:3000/api/users/login 
+ path_url=/api/users/login 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '48', 'Content-Type': 'application/json'} 
+ body=b'{"username": "hege3001", "password": "hege3001"}' 
+ </msg>
+<msg time="2026-04-26T18:59:22.305083" level="INFO">POST Response : url=http://localhost:3000/api/users/login 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '457', 'ETag': 'W/"1c9-2jdgVdYwKL5BacLVIRyw61KpcRI"', 'Date': 'Sun, 26 Apr 2026 15:59:22 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"message":"login ok","user":{"user_id":5,"username":"hege3001","email":"test3@gmail.com","created_at":"2026-04-26T12:53:48.000Z","user_level":"regular"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ1c2VybmFtZSI6ImhlZ2UzMDAxIiwiZW1haWwiOiJ0ZXN0M0BnbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyNi0wNC0yNlQxMjo1Mzo0OC4wMDBaIiwidXNlcl9sZXZlbCI6InJlZ3VsYXIiLCJpYXQiOjE3NzcyMTkxNjIsImV4cCI6MTc3NzMwNTU2Mn0.PDjnqwdVWZDFGnEccjMRvcjBLBpoWd4paqvsZ_7LpEk"} 
+ </msg>
+<msg time="2026-04-26T18:59:22.305195" level="INFO">${login} = &lt;Response [200]&gt;</msg>
+<var>${login}</var>
+<arg>api</arg>
+<arg>/api/users/login</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.236108" elapsed="0.069115"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-26T18:59:22.306189" level="INFO">${token} = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ1c2VybmFtZSI6ImhlZ2UzMDAxIiwiZW1haWwiOiJ0ZXN0M0BnbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyNi0wNC0yNlQxMjo1Mzo0OC4wMDBaIiwidXNlcl9sZXZlbCI6InJlZ3VsYXI...</msg>
+<var>${token}</var>
+<arg>${login.json()}[token]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.305509" elapsed="0.000708"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-26T18:59:22.306800" level="INFO">${headers} = {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ1c2VybmFtZSI6ImhlZ2UzMDAxIiwiZW1haWwiOiJ0ZXN0M0BnbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyNi0wNC0yNlQxMjo1Mzo0OC4wMDBaIiwid...</msg>
+<var>${headers}</var>
+<arg>Authorization=Bearer ${token}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.306462" elapsed="0.000365"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-04-26T18:59:22.312031" level="INFO">GET Request : url=http://localhost:3000/api/entries 
+ path_url=/api/entries 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ1c2VybmFtZSI6ImhlZ2UzMDAxIiwiZW1haWwiOiJ0ZXN0M0BnbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyNi0wNC0yNlQxMjo1Mzo0OC4wMDBaIiwidXNlcl9sZXZlbCI6InJlZ3VsYXIiLCJpYXQiOjE3NzcyMTkxNjIsImV4cCI6MTc3NzMwNTU2Mn0.PDjnqwdVWZDFGnEccjMRvcjBLBpoWd4paqvsZ_7LpEk'} 
+ body=None 
+ </msg>
+<msg time="2026-04-26T18:59:22.312106" level="INFO">GET Response : url=http://localhost:3000/api/entries 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '595', 'ETag': 'W/"253-0oVbuvk5dX9KyR4e4rc01lGF5X0"', 'Date': 'Sun, 26 Apr 2026 15:59:22 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body=[{"entry_id":6,"user_id":5,"entry_date":"2026-04-25T21:00:00.000Z","mood":"iloinen","weight":"70.00","sleep_hours":8,"notes":"Robotti testasi päiväkirjaa!","created_at":"2026-04-26T13:21:29.000Z"},{"entry_id":7,"user_id":5,"entry_date":"2026-04-25T21:00:00.000Z","mood":"iloinen","weight":"70.00","sleep_hours":8,"notes":"Robotti testasi päiväkirjaa!","created_at":"2026-04-26T13:23:20.000Z"},{"entry_id":8,"user_id":5,"entry_date":"2026-04-25T21:00:00.000Z","mood":"iloinen","weight":"70.00","sleep_hours":8,"notes":"Robotti testasi päiväkirjaa!","created_at":"2026-04-26T13:35:23.000Z"}] 
+ </msg>
+<msg time="2026-04-26T18:59:22.312215" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/api/entries</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.307065" elapsed="0.005173"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-04-26T18:59:22.312522" elapsed="0.000172"/>
+</kw>
+<status status="PASS" start="2026-04-26T18:59:22.235116" elapsed="0.077827"/>
+</test>
+<status status="PASS" start="2026-04-26T18:59:19.671462" elapsed="2.642236"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Crypto Login Test" id="s1" pass="1" fail="0" skip="0">Crypto Login Test</stat>
+<stat name="Api Test" id="s1" pass="3" fail="0" skip="0">Api Test</stat>
 </suite>
 </statistics>
 <errors>
