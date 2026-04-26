@@ -1,4 +1,4 @@
 ## Testausraportit
 
-- [Lokitiedosto](outputs/log.html)
-- [Raportti](outputs/report.html)
+- [Lokitiedosto](log.html)
+- [Raportti](report.html)
