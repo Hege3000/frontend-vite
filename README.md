@@ -185,11 +185,6 @@ Testasin backendin API-endpointteja RequestsLibraryllä.
 - [api_test.robot](https://github.com/Hege3000/frontend-vite/blob/master/tests/back/api_test.robot)
 
 
-## Testausraportit
-
-- [Lokitiedosto](outputs/log.html)
-- [Raportti](outputs/report.html)
----
 
 ## Käytetyt lähteet ja AI:n hyödyntäminen
 
