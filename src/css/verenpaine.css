@@ -1,0 +1,300 @@
+/* Verenpainesivu */
+.bp-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.bp-header h1 {
+    margin: 0;
+    flex: 1;
+}
+
+.bp-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.get_bp {
+    background-color: #333;
+    color: white;
+}
+
+.get_bp:hover {
+    background-color: #555;
+}
+
+.add_bp_btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.add_bp_btn:hover {
+    background-color: #45a049;
+}
+
+/* Suodatus */
+.bp-filter {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bp-filter h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-row label {
+    font-weight: bold;
+}
+
+.filter-row input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.filter-row button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#filterBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#clearFilterBtn {
+    background-color: #333;
+    color: white;
+}
+
+/* Lomake */
+.add-bp-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.add-bp-form h2 {
+    color: #333;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.add-bp-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-bp-form input,
+.add-bp-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.add-bp-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.add-bp-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.add-bp-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.add-bp-form button[type="button"] {
+    background-color: #333;
+    color: white;
+}
+
+/* Kortit */
+.bp-card-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.bp-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.bp-card-text {
+    padding: 15px;
+    text-align: left;
+}
+
+.bp-card-text p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.bp-value {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px !important;
+}
+
+/* Verenpaineen tila-värikoodit */
+.bp-normal { color: #4CAF50; }
+.bp-elevated { color: #ffc107; }
+.bp-high { color: #d9534f; }
+
+.bp-card-actions {
+    display: flex;
+    gap: 10px;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+}
+
+.bp-card-actions button {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.editBpBtn {
+    background-color: #333;
+    color: white;
+}
+
+.deleteBpBtn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.editBpBtn:hover { background-color: #555; }
+.deleteBpBtn:hover { background-color: #c9302c; }
+
+/* Dialog */
+.bp_dialog {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.bp_dialog h2 {
+    color: #333;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.bp_dialog label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.bp_dialog input,
+.bp_dialog textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.bp_dialog button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.bp_dialog button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.bp_dialog button[type="button"] {
+    background-color: #333;
+    color: white;
+}
+
+/* Viestit */
+#bpMessage, #editBpMessage {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    display: block !important;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+    display: block !important;
+}
+
+@media screen and (max-width: 640px) {
+    .bp-card { max-width: 100%; }
+    .filter-row { flex-direction: column; align-items: flex-start; }
+    .bp-header { flex-direction: column; align-items: flex-start; }
+}
+
+.nav-user {
+    color: white;
+    padding: 15px 20px;
+    float: right;
+}

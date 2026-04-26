@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miten menee? - Kirjaudu</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/login.css">
+</head>
+<body>
+<div class="sivun-raamit">
+    <nav>
+        <div class="keskitetty-alue">
+            <ul>
+                <li class="brand">Miten menee?</li>
+                <li><a href="index.html">Koti</a></li>
+                <li><a href="bmi.html">BMI-laskuri</a></li>
+                <li><a href="paivakirja.html">Päiväkirja</a></li>
+                <li><a href="verenpaine.html">Verenpaine</a></li>
+                <li><a href="login.html">Kirjaudu</a></li>
+                <li><button class="logout-btn" id="logoutBtn">Kirjaudu ulos</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="keskitetty-alue">
+        <div class="login-container">
+
+            <!-- KIRJAUTUMINEN -->
+            <section class="login-box">
+                <h2>Kirjaudu sisään</h2>
+                <form class="loginForm">
+                    <label for="loginUsername">Käyttäjänimi</label>
+                    <input type="text" id="loginUsername" name="username" placeholder="Käyttäjänimi" required />
+                    
+                    <label for="loginPassword">Salasana</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Salasana" required />
+                    
+                    <button type="submit">Kirjaudu</button>
+                </form>
+                <div id="loginMessage"></div>
+            </section>
+
+            <!-- REKISTERÖITYMINEN -->
+            <section class="login-box">
+                <h2>Rekisteröidy</h2>
+                <form class="registerForm">
+                    <label for="regUsername">Käyttäjänimi</label>
+                    <input type="text" id="regUsername" name="username" placeholder="3-20 merkkiä" required />
+                    
+                    <label for="regEmail">Sähköposti</label>
+                    <input type="email" id="regEmail" name="email" placeholder="email@example.com" required />
+                    
+                    <label for="regPassword">Salasana</label>
+                    <input type="password" id="regPassword" name="password" placeholder="Vähintään 8 merkkiä" required />
+                    
+                    <button type="submit">Rekisteröidy</button>
+                </form>
+                <div id="registerMessage"></div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>Copyright by Hege 2026</p>
+</footer>
+
+<script type="module" src="/src/js/login.js"></script>
+</body>
+</html>

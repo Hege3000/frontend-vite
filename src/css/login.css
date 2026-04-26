@@ -1,0 +1,91 @@
+
+/* Kirjautumis- ja rekisteröintisivu - minun ja Caluden tekemä */
+.login-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.login-box h2 {
+    color: #333;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #45a049;
+}
+
+/* Viestialueet */
+#loginMessage, #registerMessage {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    display: block !important;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+    display: block !important;
+}
+
+/* Kapeat näytöt */
+@media screen and (max-width: 640px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
